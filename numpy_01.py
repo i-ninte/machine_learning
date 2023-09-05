@@ -18,7 +18,7 @@ import matplotlib.pyplot as plt
 #print(plt.show())
 
 
-# claculating the size of memory
+# calculating the size of memory
 from sys import getsizeof as size
 lst= [24,12,57]
 size_of_list_object= size(lst)
@@ -28,3 +28,14 @@ total=size_of_list_object + size_of_elements
 print("size without the size of the elements: ", size_of_list_object)
 print("size of all the elements: :" , size_of_elements)
 print("size of list, including elements", total)
+
+
+
+
+a= np.array([24,12,57])
+print("the memory allocation for array a is ",size(a))
+
+
+# calculating the memory allocation for an empty array
+e= np.array([])
+print("the memory allocation for an empty array is ",size(e))
