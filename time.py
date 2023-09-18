@@ -26,4 +26,4 @@ t2= numpy_version()
 
 
 print(t1,t2)
-print("Numpy is in this example" + str(t1/t2) + " faster ")
+print("Numpy is in the example" + str(t1/t2) + " faster ")
