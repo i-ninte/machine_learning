@@ -22,6 +22,18 @@ data_duplicate= data[data.duplicated()]
 sum(data.duplicated())
 
 
+# Calculate the number of people with diabetes
+diabetic = data['Outcome'].sum()
+
+# Print the number of people with diabetes
+print("The number of diabetic patients is " + str(diabetic))
+
+# Calculate the number of people without diabetes
+non_diabetic = len(data) - diabetic
+
+# Print the number of people without diabetes
+print("The number of non-diabetic patients is " + str(non_diabetic))
+
 
 
 # Visualization 
