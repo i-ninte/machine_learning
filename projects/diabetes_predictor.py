@@ -34,7 +34,7 @@ data.describe()
 
 """a value of 0 indicates that there is no duplicated data
 
-Checking the Relation between skin thickness and Insulin
+Checking the Relation between Skin Thickness and Insulin
 """
 
 import matplotlib.pyplot as plt
