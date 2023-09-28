@@ -1,1 +1,74 @@
 
+## first tutorial on sklearn 
+#
+'''
+the numbetr of features is called dimensions
+features are the columns used they act as input to the model and ae used to deetermine the right label. 
+the labels depend on the features. they are the output of the featues 
+
+features, attributes, independent variable, input
+labels, output, dependent variable
+
+
+the numberr of rows ==number of instances 
+features ae represented by X and labels by y
+features must be between   the range of -1 and 1
+
+
+
+SAVING THE MODEL 
+fom sklearn.externals import joblib 
+
+then after training the model we create a filename with a .sav extension
+filename= 'model.sav'
+joblib.dump(clf, filenamme) clf cos it is a classification model we onytend to use in this case.
+
+
+
+OPENING THE MODEL
+remove all the codes used in savibng the model and 
+clf= joblib.load(filename)
+
+
+
+
+CLASSIIFICATION
+grouping similar features under one label
+
+
+TRAIN TEST SPLIT
+ for splitting the data into test and training data
+ we include from sklearn.model_selection import train_test_split
+ 
+ 
+ then we create the variables X_train, X_test, y_train, y_test
+X_train, X_test, y_train, y_test= train_test_split(X,y, test_size=0.2)
+this indicates that the size of the data used fo training is 20%
+'''
+
+
+WHAT IS KNN CLASSIFIER?
+KNN stands for K nearest classifier 
+it separates all datapoints into regions
+a greater value of k is advised for larger datasets
+it is advisable to use an odd umber for k to facilitate the calculations
+
+3 class classifier it takes 3 parameters 
+(k, weights (which can either be uniform or distance)
+ 
+ A uniform weight gives uniform importance to all datapoints 
+ a distance weight gives greater importance to closer points
+ 
+
+NOTE: MODELS CAN NOT READ STRINGS HENCE THE NEED TO CONVERT THEM
+the sklearn library has the LabelEncoder that we can use to do this 
+ importing the libray 
+ 
+ from sklean.preprocessing import LabelEncoder
+ 
+ CONVERTING THE DATA
+ 
+ Le= LabelEncoder()
+ for i  in range(len(X[0])):
+ X[:,i] = Le.fit_transform(X[:,i])
+ 
