@@ -3,7 +3,7 @@
 #
 '''
 the numbetr of features is called dimensions
-features are the columns used they act as input to the model and ae used to deetermine the right label. 
+features are the columns used they act as input to the model and are used to deetermine the right label. 
 the labels depend on the features. they are the output of the featues 
 
 features, attributes, independent variable, input
