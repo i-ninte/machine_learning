@@ -21,18 +21,18 @@ fom sklearn.externals import joblib
 
 then after training the model we create a filename with a .sav extension
 filename= 'model.sav'
-joblib.dump(clf, filenamme) clf cos it is a classification model we onytend to use in this case.
+joblib.dump(clf, filenamme) clf cos it is a classification model we intend to use in this case.
 
 
 
 OPENING THE MODEL
-remove all the codes used in savibng the model and 
+remove all the codes used in saving the model and 
 clf= joblib.load(filename)
 
 
 
 
-CLASSIIFICATION
+CLASSIFICATION
 grouping similar features under one label
 
 
