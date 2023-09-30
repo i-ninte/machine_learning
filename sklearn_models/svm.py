@@ -52,7 +52,9 @@ accuracy= accuracy_score(y_test, prediction)
 #printing predictions and accuracy
 
 print("predictions :", prediction)
+print("actual", y_test)
 print("accuracy :", accuracy)
-#
+
+
 
 
