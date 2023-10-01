@@ -1,7 +1,7 @@
 ## first tutorial on sklearn 
 #
 '''
-the numbetr of features is called dimensions
+the number of features is called dimensions
 features are the columns used they act as input to the model and are used to deetermine the right label. 
 the labels depend on the features. they are the output of the features 
 
@@ -10,7 +10,7 @@ labels, output, dependent variable
 
 
 the number of rows ==number of instances 
-features ae represented by X and labels by y
+features are represented by X and labels by y
 features must be between   the range of -1 and 1
 
 
