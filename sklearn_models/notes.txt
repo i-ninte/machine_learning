@@ -47,7 +47,7 @@ this indicates that the size of the data used for training is 20%
 
 
 SVM
-support vector machine is used in high dimensional cases or cases with many features.
+support vector machine is used in high-dimensional cases or cases with many features.
 
 AREAS OF USAGE
 Effective high-dimensional spaces 
@@ -86,3 +86,24 @@ the plane separating the centroids are called hyper-points
 the difference between clustering and classification is that clustering does not train models while classification does. 
 
 In fitting, you do not pass in the y_train because clustering takes the features and separates them by itself
+
+EURAL NETWORKS 
+the goal is to find patterns 
+the inputs are represented by nodes typically circles 
+the inputs have weights attached to them 
+the output is calculated using linear combinations
+x1w1+ x2w2 + x3w3 + x4w4
+biases are also added to the terms 
+to accurately find patterns we add hidden layers
+
+USES
+classification 
+image processing 
+text classification (spam detection)
+regression
+chat boxes 
+clustering 
+
+COST FUNCTION AND GRADIENT DESCENT 
+LOSS FUNCTIONS 
+the cost function of a neural network tells the model how badly it did so it can improve. the most common cost functions are the mean square error function and the mean absolute error (MAE)
