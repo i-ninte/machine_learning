@@ -39,3 +39,5 @@ print(pd.crosstab(y_train, labels))
 def bench_k_means(estimator, name, data):
 	estimator.fit(data)
 	print()
+
+bench_k_means(X,y)
