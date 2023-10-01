@@ -47,14 +47,14 @@ this indicates that the size of the data used for training is 20%
 
 
 SVM
-support vector machine is used in high dimensional cases or cases where there are many features.
+support vector machine is used in high dimensional cases or cases with many features.
 
 AREAS OF USAGE
 Effective high-dimensional spaces 
 many kernel functions
 classification and regression
 
-it calculates the distance fromthe support vectors to the machine.
+it calculates the distance from the support vectors to the machine.
 
 
 kERNELS 
@@ -66,7 +66,7 @@ rbf - polynomials
 
 LINEAR REGRESSION
 
-the r squared value indicates how accurate the egression line represents tthe  data points
+the r-squared value indicates how accurately the expression line represents the  data points
 
 
 LOGISTIC REGRESSION 
@@ -76,13 +76,13 @@ it converts the values from the range of zero to one.
 
 
 KMEANS AND THE MATHS BEHIND IT 
-clustering is an algorithmn where data points ae assigned to labels based on feature similarity
+clustering is an algorithm where data points are assigned to labels based on feature similarity
 Kmeans uses centroids 
 number of labels == number of centroids
-the algorithmn then finds a plane equidistant to the centroids.
-then it calculates the average position of all poimts and separates the dataset
-the palne sepaating the centroids are called hyperpoints
+the algorithm then finds a plane equidistant to the centroids.
+then it calculates the average position of all points and separates the dataset
+the plane separating the centroids are called hyper-points
 
-the diffenece between clustering and classification is that clustering does not train models whiles classification does. 
+the difference between clustering and classification is that clustering does not train models while classification does. 
 
-In fitting you do not pass in the y_train because clustering takes the features and separates them by itself
+In fitting, you do not pass in the y_train because clustering takes the features and separates them by itself
