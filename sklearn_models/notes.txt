@@ -55,3 +55,34 @@ many kernel functions
 classification and regression
 
 it calculates the distance fromthe support vectors to the machine.
+
+
+kERNELS 
+are functions we use to increase the dimension
+we use it for classification and regressions
+rbf - polynomials
+
+
+
+LINEAR REGRESSION
+
+the r squared value indicates how accurate the egression line represents tthe  data points
+
+
+LOGISTIC REGRESSION 
+it is a sigmoid function  logit(y) = 1/(1+pow(e,-y))
+
+it converts the values from the range of zero to one.
+
+
+KMEANS AND THE MATHS BEHIND IT 
+clustering is an algorithmn where data points ae assigned to labels based on feature similarity
+Kmeans uses centroids 
+number of labels == number of centroids
+the algorithmn then finds a plane equidistant to the centroids.
+then it calculates the average position of all poimts and separates the dataset
+the palne sepaating the centroids are called hyperpoints
+
+the diffenece between clustering and classification is that clustering does not train models whiles classification does. 
+
+In fitting you do not pass in the y_train because clustering takes the features and separates them by itself
