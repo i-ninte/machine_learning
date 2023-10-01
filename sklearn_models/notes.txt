@@ -2,14 +2,14 @@
 #
 '''
 the numbetr of features is called dimensions
-features are the columns used they act as input to the model and ae used to deetermine the right label. 
-the labels depend on the features. they are the output of the featues 
+features are the columns used they act as input to the model and are used to deetermine the right label. 
+the labels depend on the features. they are the output of the features 
 
-features, attributes, independent variable, input
+features, attributes, independent variables, input
 labels, output, dependent variable
 
 
-the numberr of rows ==number of instances 
+the number of rows ==number of instances 
 features ae represented by X and labels by y
 features must be between   the range of -1 and 1
 
