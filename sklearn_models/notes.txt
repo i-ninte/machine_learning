@@ -2,7 +2,7 @@
 #
 '''
 the number of features is called dimensions
-features are the columns used they act as input to the model and are used to deetermine the right label. 
+features are the columns used they act as input to the model and are used to determine the right label. 
 the labels depend on the features. they are the output of the features 
 
 features, attributes, independent variables, input
@@ -20,7 +20,7 @@ fom sklearn.externals import joblib
 
 then after training the model we create a filename with a .sav extension
 filename= 'model.sav'
-joblib.dump(clf, filenamme) clf cos it is a classification model we onytend to use in this case.
+joblib.dump(clf, filenamme) clf cos it is a classification model we intend to use in this case.
 
 
 
@@ -31,7 +31,7 @@ clf= joblib.load(filename)
 
 
 
-CLASSIIFICATION
+CLASSIFICATION
 grouping similar features under one label
 
 
@@ -42,7 +42,7 @@ TRAIN TEST SPLIT
  
  then we create the variables X_train, X_test, y_train, y_test
 X_train, X_test, y_train, y_test= train_test_split(X,y, test_size=0.2)
-this indicates that the size of the data used fo training is 20%
+this indicates that the size of the data used for training is 20%
 '''
 
 
@@ -50,7 +50,7 @@ SVM
 support vector machine is used in high dimensional cases or cases where there are many features.
 
 AREAS OF USAGE
-Effective high dimensional spaces 
+Effective high-dimensional spaces 
 many kernel functions
 classification and regression
 
