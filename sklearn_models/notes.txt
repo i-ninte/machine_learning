@@ -107,3 +107,18 @@ clustering
 COST FUNCTION AND GRADIENT DESCENT 
 LOSS FUNCTIONS 
 the cost function of a neural network tells the model how badly it did so it can improve. the most common cost functions are the mean square error function and the mean absolute error (MAE)
+
+GRADIENT DESCENT
+it's a way to minimize the cost function and improve the model
+
+BACKPROPAGATION
+the algorithm used in one training set to calculate the change we wish to apply to our training set. The method involves finding the weight and changing the weight which will bring about the most significance in the cost reduction process.
+the error is a composite function of the activation functions and the hidden layers.
+Z is the sum of the weights and biases.
+
+
+CNN
+Convolutional Neural Network
+the convolutional layer adds a filter  that enables the network to detect patterns 
+primarily used in image recognition.
+it takes a matrix from the web and then takes the scalar product of the matrix with the one it fits in the first top corner. It does the same for the next (after moving one column to the right) 3 * 3 matrix to determine if the answers are the same then there is a pattern 
