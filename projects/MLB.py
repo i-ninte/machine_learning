@@ -10,6 +10,7 @@ mlb_df['BA']=mlb_df['H']/mlb_df['AB']
 other_hits= col_list_sum(mlb_df,['2B','3B','HR'])
 mlb_df['1B']= mlb_df['H'] - other_hits
 
-weighted_hits = col_list_sum(mlb_df, ['1B', '2B', '3B', 'HR'],
-                             weights=[1, 2, 3, 4])
+weighted_hits = col_list_sum(mlb_df, ['1B', '2B', '3B', 'HR'],weights=[1, 2, 3, 4])
+
+mlb_df['SLG']= weighted_hits/mlb_df['AB']
 
