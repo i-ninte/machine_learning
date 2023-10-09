@@ -32,3 +32,13 @@ print('{}\n'.format(repr(transformed)))
 custom_scaler = MinMaxScaler(feature_range=(-2, 3))
 transformed = custom_scaler.fit_transform(data)
 print('{}\n'.format(repr(transformed)))
+
+
+#Robust Scaling using the median and the IQR
+# predefined data
+print('{}\n'.format(repr(data)))
+
+from sklearn.preprocessing import RobustScaler
+robust_scaler = RobustScaler()
+transformed = robust_scaler.fit_transform(data)
+print('{}\n'.format(repr(transformed)))
