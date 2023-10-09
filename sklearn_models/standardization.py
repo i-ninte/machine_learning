@@ -73,3 +73,20 @@ print('{}\n'.format(repr(transformed)))
 imp_frequent = SimpleImputer(strategy='most_frequent')
 transformed = imp_frequent.fit_transform(data)
 print('{}\n'.format(repr(transformed)))
+
+#data reduction using PCA (principal component analysis)
+# predefined data
+print('{}\n'.format(repr(data)))
+
+from sklearn.decomposition import PCA
+pca_obj = PCA() # The value of n_component will be 4. As m is 5 and the default is always m-1
+pc = pca_obj.fit_transform(data).round(3)
+print('{}\n'.format(repr(pc)))
+
+pca_obj = PCA(n_components=3)
+pc = pca_obj.fit_transform(data).round(3)
+print('{}\n'.format(repr(pc)))
+
+pca_obj = PCA(n_components=2)
+pc = pca_obj.fit_transform(data).round(3)
+print('{}\n'.format(repr(pc)))
