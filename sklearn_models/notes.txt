@@ -128,4 +128,23 @@ DATA PROCESSING WITH SKLEARN
 Data standardization: data is said to be standard when it has a standard deviation of 1 and a mean of 0. the way to do this is to substract the overall mean from each element and then divide by the overall standard deviation.
 z=(x−μ)/σ
 ​
+A. Range scaling
+Apart from standardizing data, we can also scale data by compressing it into a fixed range. One of the biggest use cases for this is compressing data into the range [0, 1]. This allows us to view the data in terms of proportions, or percentages, based on the minimum and maximum values in the data.
 
+The formula for scaling based on a range is a two-step process. For a given data value, x, we first compute the proportion of the value with respect to the min and max of the data dmin and dmax, respectively).
+
+xprop= (x-dmin)/dmax-dmin
+We then use the proportion of the value to scale to the specified range, [rmin, rmax]. The formula below calculates the new scaled value, xscale.
+xscale= xprop(rmax-rmin) + rmin
+
+The MinMaxScaler transformer performs the range compression using the previous formula. Specifically, it scales each feature (column) of the data to a given range (where the default range is [0, 1]).
+
+
+IMPUTATION
+There are many different methods for data imputation. In scikit-learn, the SimpleImputer transformer performs four different data imputation methods.
+
+The four methods are:
+Using the mean value
+Using the median value
+Using the most frequent value
+Filling in missing values with a constant
