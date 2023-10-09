@@ -1,16 +1,16 @@
 ## first tutorial on sklearn 
 #
 '''
-the number of features is called dimensions
-features are the columns used they act as input to the model and are used to determine the right label. 
-the labels depend on the features. they are the output of the features 
+the numbetr of features is called dimensions
+features are the columns used they act as input to the model and ae used to deetermine the right label. 
+the labels depend on the features. they are the output of the featues 
 
-features, attributes, independent variables, input
+features, attributes, independent variable, input
 labels, output, dependent variable
 
 
-the number of rows ==number of instances 
-features are represented by X and labels by y
+the numberr of rows ==number of instances 
+features ae represented by X and labels by y
 features must be between   the range of -1 and 1
 
 
@@ -20,7 +20,7 @@ fom sklearn.externals import joblib
 
 then after training the model we create a filename with a .sav extension
 filename= 'model.sav'
-joblib.dump(clf, filenamme) clf cos it is a classification model we intend to use in this case.
+joblib.dump(clf, filenamme) clf cos it is a classification model we onytend to use in this case.
 
 
 
@@ -31,7 +31,7 @@ clf= joblib.load(filename)
 
 
 
-CLASSIFICATION
+CLASSIIFICATION
 grouping similar features under one label
 
 
@@ -42,19 +42,19 @@ TRAIN TEST SPLIT
  
  then we create the variables X_train, X_test, y_train, y_test
 X_train, X_test, y_train, y_test= train_test_split(X,y, test_size=0.2)
-this indicates that the size of the data used for training is 20%
+this indicates that the size of the data used fo training is 20%
 '''
 
 
 SVM
-support vector machine is used in high-dimensional cases or cases with many features.
+support vector machine is used in high dimensional cases or cases where there are many features.
 
 AREAS OF USAGE
-Effective high-dimensional spaces 
+Effective high dimensional spaces 
 many kernel functions
 classification and regression
 
-it calculates the distance from the support vectors to the machine.
+it calculates the distance fromthe support vectors to the machine.
 
 
 kERNELS 
@@ -66,7 +66,7 @@ rbf - polynomials
 
 LINEAR REGRESSION
 
-the r-squared value indicates how accurately the expression line represents the  data points
+the r squared value indicates how accurate the egression line represents tthe  data points
 
 
 LOGISTIC REGRESSION 
@@ -76,25 +76,25 @@ it converts the values from the range of zero to one.
 
 
 KMEANS AND THE MATHS BEHIND IT 
-clustering is an algorithm where data points are assigned to labels based on feature similarity
+clustering is an algorithmn where data points ae assigned to labels based on feature similarity
 Kmeans uses centroids 
 number of labels == number of centroids
-the algorithm then finds a plane equidistant to the centroids.
-then it calculates the average position of all points and separates the dataset
-the plane separating the centroids are called hyper-points
+the algorithmn then finds a plane equidistant to the centroids.
+then it calculates the average position of all poimts and separates the dataset
+the palne sepaating the centroids are called hyperpoints
 
-the difference between clustering and classification is that clustering does not train models while classification does. 
+the diffenece between clustering and classification is that clustering does not train models whiles classification does. 
 
-In fitting, you do not pass in the y_train because clustering takes the features and separates them by itself
+In fitting you do not pass in the y_train because clustering takes the features and separates them by itself
 
-EURAL NETWORKS 
+NEURAL NETWORKS 
 the goal is to find patterns 
 the inputs are represented by nodes typically circles 
 the inputs have weights attached to them 
 the output is calculated using linear combinations
 x1w1+ x2w2 + x3w3 + x4w4
 biases are also added to the terms 
-to accurately find patterns we add hidden layers
+to accurately find patterns we add a hidden layers
 
 USES
 classification 
@@ -106,19 +106,26 @@ clustering
 
 COST FUNCTION AND GRADIENT DESCENT 
 LOSS FUNCTIONS 
-the cost function of a neural network tells the model how badly it did so it can improve. the most common cost functions are the mean square error function and the mean absolute error (MAE)
+the cost function of a neural network tells the model how bad it did so it can improve. the most common cost functions are the mean square error function and the mean absolute error (mae)
 
 GRADIENT DESCENT
-it's a way to minimize the cost function and improve the model
+its a way to minimize the cost function and improve the model
 
-BACKPROPAGATION
+BACK PROPAGATION
 the algorithm used in one training set to calculate the change we wish to apply to our training set. The method involves finding the weight and changing the weight which will bring about the most significance in the cost reduction process.
-the error is a composite function of the activation functions and the hidden layers.
+the error is a composite function of the activation functions and gthe hidden layers.
 Z is the sum of the weights and biases.
 
 
 CNN
-Convolutional Neural Network
-the convolutional layer adds a filter  that enables the network to detect patterns 
-primarily used in image recognition.
-it takes a matrix from the web and then takes the scalar product of the matrix with the one it fits in the first top corner. It does the same for the next (after moving one column to the right) 3 * 3 matrix to determine if the answers are the same then there is a pattern 
+Convulutional Neural Network
+the convulutional layer addds a filter  tha enable the network to detect patterns 
+mostly used in image recognitions.
+it talkes a matrix from the network and then takes the scalar product of the matix with the one it fits it in the first top coner. It does same for the next (after moving one column to the right) 3 * 3 matrix to determine if the answers are the same then there is a pattern 
+
+
+DATA PROCESSING WITH SKLEARN
+Data standardization: data is said to be standard when it has a standard deviation of 1 and a mean of 0. the way to do this is to substract the overall mean from each element and then divide by the overall standard deviation.
+z=(x−μ)/σ
+​
+
