@@ -14,3 +14,8 @@ print('{}\n'.format(repr(col_means)))
 # Column standard deviations
 col_stds = col_standardized.std(axis=0)
 print('{}\n'.format(repr(col_stds)))
+
+
+def standardize_data(data):
+  scaled_data = scale(data)
+  return scaled_data
