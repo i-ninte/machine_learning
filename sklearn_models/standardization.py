@@ -60,3 +60,16 @@ from sklearn.impute import SimpleImputer
 imp_mean = SimpleImputer()
 transformed = imp_mean.fit_transform(data)
 print('{}\n'.format(repr(transformed)))
+
+#using the strategy to depict the type of imputation
+# predefined data
+print('{}\n'.format(repr(data)))
+
+from sklearn.impute import SimpleImputer
+imp_median = SimpleImputer(strategy='median')
+transformed = imp_median.fit_transform(data)
+print('{}\n'.format(repr(transformed)))
+
+imp_frequent = SimpleImputer(strategy='most_frequent')
+transformed = imp_frequent.fit_transform(data)
+print('{}\n'.format(repr(transformed)))
