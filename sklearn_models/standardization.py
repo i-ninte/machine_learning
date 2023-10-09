@@ -42,3 +42,12 @@ from sklearn.preprocessing import RobustScaler
 robust_scaler = RobustScaler()
 transformed = robust_scaler.fit_transform(data)
 print('{}\n'.format(repr(transformed)))
+
+#scaling using l2 normalization 
+# predefined data
+print('{}\n'.format(repr(data)))
+
+from sklearn.preprocessing import Normalizer
+normalizer = Normalizer()
+transformed = normalizer.fit_transform(data)
+print('{}\n'.format(repr(transformed)))
