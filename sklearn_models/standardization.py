@@ -51,3 +51,12 @@ from sklearn.preprocessing import Normalizer
 normalizer = Normalizer()
 transformed = normalizer.fit_transform(data)
 print('{}\n'.format(repr(transformed)))
+
+# predefined data
+#mean imputation
+print('{}\n'.format(repr(data)))
+
+from sklearn.impute import SimpleImputer
+imp_mean = SimpleImputer()
+transformed = imp_mean.fit_transform(data)
+print('{}\n'.format(repr(transformed)))
