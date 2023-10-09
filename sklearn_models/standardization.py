@@ -19,3 +19,16 @@ print('{}\n'.format(repr(col_stds)))
 def standardize_data(data):
   scaled_data = scale(data)
   return scaled_data
+
+#scaling using the MinMaxScaler transformer 
+# predefined data
+print('{}\n'.format(repr(data)))
+
+from sklearn.preprocessing import MinMaxScaler
+default_scaler = MinMaxScaler() # the default range is [0,1]
+transformed = default_scaler.fit_transform(data)
+print('{}\n'.format(repr(transformed)))
+
+custom_scaler = MinMaxScaler(feature_range=(-2, 3))
+transformed = custom_scaler.fit_transform(data)
+print('{}\n'.format(repr(transformed)))
