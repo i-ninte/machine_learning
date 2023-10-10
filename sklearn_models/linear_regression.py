@@ -40,4 +40,4 @@ print("pedictions: ", predictions)
 print(" R square values", l_reg.score(X,y))
 
 print("coefficient", l_reg.coef_)
-print("intercept", l_reg.intercept)
+print("intercept", l_reg.intercept_)
