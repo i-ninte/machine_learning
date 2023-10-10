@@ -41,3 +41,10 @@ print(" R square values", l_reg.score(X,y))
 
 print("coefficient", l_reg.coef_)
 print("intercept", l_reg.intercept_)
+
+
+#regression for pizza 
+def linear_reg(data, labels):
+  reg=linear_model.LinearRegression()
+  reg.fit(data,labels)
+  return reg
