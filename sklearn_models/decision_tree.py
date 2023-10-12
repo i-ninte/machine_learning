@@ -39,3 +39,14 @@ print('MSE: {}\n'.format(mse))
 mae = metrics.mean_absolute_error(
   test_labels, predictions)
 print('MAE: {}\n'.format(mae))
+
+
+#evaluating predictions
+clf = tree.DecisionTreeClassifier()
+# predefined train and test sets
+clf.fit(train_data, train_labels)
+predictions = clf.predict(test_data)
+
+from sklearn import metrics
+acc = metrics.accuracy_score(test_labels, predictions)
+print('Accuracy: {}\n'.format(acc))
