@@ -38,3 +38,8 @@ print('Prediction classes: {}\n'.format(
 from sklearn import linear_model
 reg = linear_model.LogisticRegression(
   solver='lbfgs', max_iter=1000)
+
+#with cv
+from sklearn import linear_model
+reg = linear_model.LogisticRegressionCV(
+  solver='multinomial', max_iter=1000)
