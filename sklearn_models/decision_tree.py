@@ -23,3 +23,19 @@ for depth in range(3, 8):
   std_2 = 2 * scores.std()  # 2 std devs
   print('95% C.I. for depth {}: {} +/- {:.2f}\n'.format(
     depth, mean, std_2))
+
+#evaluation 
+reg = tree.DecisionTreeRegressor()
+# predefined train and test sets
+reg.fit(train_data, train_labels)
+predictions = reg.predict(test_data)
+
+from sklearn import metrics
+r2 = metrics.r2_score(test_labels, predictions)
+print('R2: {}\n'.format(r2))
+mse = metrics.mean_squared_error(
+  test_labels, predictions)
+print('MSE: {}\n'.format(mse))
+mae = metrics.mean_absolute_error(
+  test_labels, predictions)
+print('MAE: {}\n'.format(mae))
