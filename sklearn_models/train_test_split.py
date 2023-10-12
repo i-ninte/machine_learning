@@ -54,3 +54,13 @@ print('{}\n'.format(repr(train_data)))
 print('{}\n'.format(repr(train_labels)))
 print('{}\n'.format(repr(test_data)))
 print('{}\n'.format(repr(test_labels)))
+
+
+def dataset_splitter(data, labels, test_size=0.25):
+  split_dataset = train_test_split(data, labels,
+                                   test_size=test_size)
+  train_set = (split_dataset[0], split_dataset[2])
+  test_set = (split_dataset[1], split_dataset[3])
+  return train_set, test_set
+
+
