@@ -34,3 +34,7 @@ new_data = np.array([
   [ 3.3,  0.8, 0.1, 2.5]])
 print('Prediction classes: {}\n'.format(
   repr(reg.predict(new_data))))
+
+from sklearn import linear_model
+reg = linear_model.LogisticRegression(
+  solver='lbfgs', max_iter=1000)
