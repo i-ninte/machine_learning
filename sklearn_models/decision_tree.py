@@ -13,7 +13,7 @@ print('Labels:\n{}\n'.format(repr(labels)))
 clf_tree1.fit(data, labels)
 
 
-#applying cv to decision tree to determine the best max_depth
+#applying cv to the decision tree to determine the best max_depth
 is_clf = True  # for classification
 for depth in range(3, 8):
   # Predefined data and labels
