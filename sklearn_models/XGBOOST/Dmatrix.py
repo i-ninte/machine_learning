@@ -71,3 +71,10 @@ print('Probabilities:\n{}'.format(
 bst.save_model('model.bin')
 
 #loading
+# Load saved Booster
+new_bst = xgb.Booster()
+new_bst.load_model('model.bin')
+
+# Same dpred from before
+print('Probabilities:\n{}'.format(
+  repr(new_bst.predict(dpred))))
