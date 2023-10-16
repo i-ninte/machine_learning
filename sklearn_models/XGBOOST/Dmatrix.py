@@ -111,3 +111,10 @@ model.fit(data, labels)
 # Array of feature importances
 print('Feature importances:\n{}'.format(
   repr(model.feature_importances_)))
+#plotting important features
+model = xgb.XGBRegressor()
+# predefined data and labels (for regression)
+model.fit(data, labels)
+
+xgb.plot_importance(model)
+plt.show() # matplotlib plot
