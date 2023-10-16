@@ -38,3 +38,17 @@ dpred = xgb.DMatrix(new_data)
 # predictions represents probabilities
 predictions = bst.predict(dpred)
 print('{}\n'.format(predictions))
+
+
+#cv
+# predefined data and labels
+dtrain = xgb.DMatrix(data, label=labels)
+params = {
+  'max_depth': 2,
+  'lambda': 1.5,
+  'objective':'binary:logistic',
+  'eval_metric':'logloss'
+
+}
+cv_results = xgb.cv(params, dtrain)
+print('CV Results:\n{}'.format(cv_results))
