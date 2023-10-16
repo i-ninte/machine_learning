@@ -95,3 +95,10 @@ model.fit(data, labels)
 # new_data contains 2 new data observations
 predictions = model.predict(new_data)
 print('Predictions:\n{}'.format(repr(predictions)))
+model = xgb.XGBRegressor(max_depth=2)
+# predefined data and labels (for regression)
+model.fit(data, labels)
+
+# new_data contains 2 new data observations
+predictions = model.predict(new_data)
+print('Predictions:\n{}'.format(repr(predictions)))
