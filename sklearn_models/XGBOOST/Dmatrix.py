@@ -52,3 +52,20 @@ params = {
 }
 cv_results = xgb.cv(params, dtrain)
 print('CV Results:\n{}'.format(cv_results))
+
+#saving
+# predefined data and labels
+dtrain = xgb.DMatrix(data, label=labels)
+params = {
+  'max_depth': 3,
+  'objective':'binary:logistic',
+  'eval_metric':'logloss'
+}
+bst = xgb.train(params, dtrain)
+
+# 2 new data observations
+dpred = xgb.DMatrix(new_data)
+print('Probabilities:\n{}'.format(
+  repr(bst.predict(dpred))))
+
+bst.save_model('model.bin')
