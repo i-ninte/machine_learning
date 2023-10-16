@@ -87,3 +87,11 @@ model.fit(data, labels)
 # new_data contains 2 new data observations
 predictions = model.predict(new_data)
 print('Predictions:\n{}'.format(repr(predictions)))
+
+model = xgb.XGBClassifier(objective='multi:softmax', eval_metric='mlogloss', use_label_encoder=False)
+# predefined data and labels (multiclass dataset)
+model.fit(data, labels)
+
+# new_data contains 2 new data observations
+predictions = model.predict(new_data)
+print('Predictions:\n{}'.format(repr(predictions)))
