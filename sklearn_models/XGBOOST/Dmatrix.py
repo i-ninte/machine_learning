@@ -7,3 +7,18 @@ dmat1 = xgb.DMatrix(data)
 
 labels = np.array([0, 1])
 dmat2 = xgb.DMatrix(data, label=labels)
+#adding a booster
+# predefined data and labels
+print('Data shape: {}'.format(data.shape))
+print('Labels shape: {}'.format(labels.shape))
+dtrain = xgb.DMatrix(data, label=labels)
+
+# training parameters
+params = {
+  'max_depth': 0,
+  'objective': 'binary:logistic',
+  'eval_metric':'logloss'
+}
+print('Start training')
+bst = xgb.train(params, dtrain)  # booster
+print('Finish training')
