@@ -69,3 +69,5 @@ print('Probabilities:\n{}'.format(
   repr(bst.predict(dpred))))
 
 bst.save_model('model.bin')
+
+#loading
