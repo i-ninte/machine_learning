@@ -78,3 +78,12 @@ new_bst.load_model('model.bin')
 # Same dpred from before
 print('Probabilities:\n{}'.format(
   repr(new_bst.predict(dpred))))
+
+#XGBClassifier
+model = xgb.XGBClassifier(use_label_encoder=False, eval_metric='logloss')
+# predefined data and labels
+model.fit(data, labels)
+
+# new_data contains 2 new data observations
+predictions = model.predict(new_data)
+print('Predictions:\n{}'.format(repr(predictions)))
