@@ -22,3 +22,19 @@ params = {
 print('Start training')
 bst = xgb.train(params, dtrain)  # booster
 print('Finish training')
+
+
+#using a booster
+# predefined evaluation data and labels
+print('Data shape: {}'.format(eval_data.shape))
+print('Labels shape: {}'.format(eval_labels.shape))
+deval = xgb.DMatrix(eval_data, label=eval_labels)
+
+# Trained bst from previous code
+print(bst.eval(deval))  # evaluation
+
+# new_data contains 2 new data observations
+dpred = xgb.DMatrix(new_data)
+# predictions represents probabilities
+predictions = bst.predict(dpred)
+print('{}\n'.format(predictions))
