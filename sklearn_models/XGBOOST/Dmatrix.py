@@ -7,6 +7,7 @@ dmat1 = xgb.DMatrix(data)
 
 labels = np.array([0, 1])
 dmat2 = xgb.DMatrix(data, label=labels)
+
 #adding a booster
 # predefined data and labels
 print('Data shape: {}'.format(data.shape))
@@ -23,7 +24,6 @@ print('Start training')
 bst = xgb.train(params, dtrain)  # booster
 print('Finish training')
 
-
 #using a booster
 # predefined evaluation data and labels
 print('Data shape: {}'.format(eval_data.shape))
@@ -39,7 +39,6 @@ dpred = xgb.DMatrix(new_data)
 predictions = bst.predict(dpred)
 print('{}\n'.format(predictions))
 
-
 #cv
 # predefined data and labels
 dtrain = xgb.DMatrix(data, label=labels)
@@ -52,23 +51,6 @@ params = {
 }
 cv_results = xgb.cv(params, dtrain)
 print('CV Results:\n{}'.format(cv_results))
-
-#saving
-# predefined data and labels
-dtrain = xgb.DMatrix(data, label=labels)
-params = {
-  'max_depth': 3,
-  'objective':'binary:logistic',
-  'eval_metric':'logloss'
-}
-bst = xgb.train(params, dtrain)
-
-# 2 new data observations
-dpred = xgb.DMatrix(new_data)
-print('Probabilities:\n{}'.format(
-  repr(bst.predict(dpred))))
-
-bst.save_model('model.bin')
 
 #loading
 # Load saved Booster
@@ -95,26 +77,27 @@ model.fit(data, labels)
 # new_data contains 2 new data observations
 predictions = model.predict(new_data)
 print('Predictions:\n{}'.format(repr(predictions)))
-model = xgb.XGBRegressor(max_depth=2)
-# predefined data and labels (for regression)
-model.fit(data, labels)
 
-# new_data contains 2 new data observations
-predictions = model.predict(new_data)
-print('Predictions:\n{}'.format(repr(predictions)))
-
-#feature importance
-model = xgb.XGBClassifier(objective='multi:softmax', eval_metric='mlogloss', use_label_encoder=False)
-# predefined data and labels
-model.fit(data, labels)
-
-# Array of feature importances
-print('Feature importances:\n{}'.format(
-  repr(model.feature_importances_)))
-#plotting important features
+#oltting important features 
 model = xgb.XGBRegressor()
 # predefined data and labels (for regression)
 model.fit(data, labels)
 
 xgb.plot_importance(model)
 plt.show() # matplotlib plot
+
+#selecting best param from cv
+model = xgb.XGBClassifier(objective='binary:logistic', eval_metric='logloss', use_label_encoder=False)
+params = {'max_depth': range(2, 5)}
+
+from sklearn.model_selection import GridSearchCV
+cv_model = GridSearchCV(model, params, cv=4)
+
+# predefined data and labels
+cv_model.fit(data, labels)
+print('Best max_depth: {}\n'.format(
+  cv_model.best_params_['max_depth']))
+
+# new_data contains 2 new data observations
+print('Predictions:\n{}'.format(
+  repr(cv_model.predict(new_data))))
