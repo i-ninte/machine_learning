@@ -102,3 +102,12 @@ model.fit(data, labels)
 # new_data contains 2 new data observations
 predictions = model.predict(new_data)
 print('Predictions:\n{}'.format(repr(predictions)))
+
+#feature importance
+model = xgb.XGBClassifier(objective='multi:softmax', eval_metric='mlogloss', use_label_encoder=False)
+# predefined data and labels
+model.fit(data, labels)
+
+# Array of feature importances
+print('Feature importances:\n{}'.format(
+  repr(model.feature_importances_)))
