@@ -112,7 +112,7 @@ GRADIENT DESCENT
 it's a way to minimize the cost function and improve the model
 
 BACKPROPAGATION
-the algorithm used in one training set to calculate the change we wish to apply to our training set. The method involves finding the weight and changing the weight which will bring about the most significance in the cost reduction process.
+the algorithm used in one training set calculates the change we wish to apply to our training set. The method involves finding the weight and changing the weight which will bring about the most significance in the cost reduction process.
 the error is a composite function of the activation functions and the hidden layers.
 Z is the sum of the weights and biases.
 
