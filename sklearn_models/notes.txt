@@ -16,11 +16,11 @@ features must be between   the range of -1 and 1
 
 
 SAVING THE MODEL 
-fom sklearn.externals import joblib 
+from sklearn.externals import joblib 
 
-then after training the model we create a filename with a .sav extension
+then after training the model, we create a filename with a .sav extension
 filename= 'model.sav'
-joblib.dump(clf, filenamme) clf cos it is a classification model we onytend to use in this case.
+joblib.dump(clf, filename) clf cos it is a classification model we intend to use in this case.
 
 
 
@@ -31,7 +31,7 @@ clf= joblib.load(filename)
 
 
 
-CLASSIIFICATION
+CLASSIFICATION
 grouping similar features under one label
 
 
