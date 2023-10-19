@@ -76,14 +76,14 @@ it converts the values from the range of zero to one.
 
 
 KMEANS AND THE MATHS BEHIND IT 
-clustering is an algorithmn where data points are assigned to labels based on feature similarity
+clustering is an algorithm where data points are assigned to labels based on feature similarity
 Kmeans uses centroids 
 number of labels == number of centroids
-the algorithmn then finds a plane equidistant to the centroids.
-then it calculates the average position of all poimts and separates the dataset
-the palne sepaating the centroids are called hyper-points
+the algorithm then finds a plane equidistant to the centroids.
+then it calculates the average position of all points and separates the dataset
+the plane separating the centroids are called hyper-points
 
-the difference between clustering and classification is that clustering does not train models whiles classification does. 
+the difference between clustering and classification is that clustering does not train models while classification does. 
 
 In fitting, you do not pass in the y_train because clustering takes the features and separates them by itself
 
