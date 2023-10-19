@@ -66,7 +66,7 @@ rbf - polynomials
 
 LINEAR REGRESSION
 
-the r-squared value indicates how accurately the egression line represents the  data points
+the r-squared value indicates how accurately the expression line represents the  data points
 
 
 LOGISTIC REGRESSION 
@@ -76,16 +76,16 @@ it converts the values from the range of zero to one.
 
 
 KMEANS AND THE MATHS BEHIND IT 
-clustering is an algorithmn where data points ae assigned to labels based on feature similarity
+clustering is an algorithmn where data points are assigned to labels based on feature similarity
 Kmeans uses centroids 
 number of labels == number of centroids
 the algorithmn then finds a plane equidistant to the centroids.
 then it calculates the average position of all poimts and separates the dataset
-the palne sepaating the centroids are called hyperpoints
+the palne sepaating the centroids are called hyper-points
 
-the diffenece between clustering and classification is that clustering does not train models whiles classification does. 
+the difference between clustering and classification is that clustering does not train models whiles classification does. 
 
-In fitting you do not pass in the y_train because clustering takes the features and separates them by itself
+In fitting, you do not pass in the y_train because clustering takes the features and separates them by itself
 
 NEURAL NETWORKS 
 the goal is to find patterns 
@@ -94,7 +94,7 @@ the inputs have weights attached to them
 the output is calculated using linear combinations
 x1w1+ x2w2 + x3w3 + x4w4
 biases are also added to the terms 
-to accurately find patterns we add a hidden layers
+to accurately find patterns we add hidden layers
 
 USES
 classification 
