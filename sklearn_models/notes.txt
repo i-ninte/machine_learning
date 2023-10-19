@@ -119,13 +119,13 @@ Z is the sum of the weights and biases.
 
 CNN
 Convolutional Neural Network
-the convolutional layer ads a filter  that enables the network to detect patterns 
+the convolutional layer is a filter  that enables the network to detect patterns 
 mostly used in image recognition.
-it takes a matrix from the network and then takes the scalar product of the matrix with the one it fits it in the first top coner. It does same for the next (after moving one column to the right) 3 * 3 matrix to determine if the answers are the same then there is a pattern 
+it takes a matrix from the network and then takes the scalar product of the matrix with the one it fits in the first top corner. It does the same for the next (after moving one column to the right) 3 * 3 matrix to determine if the answers are the same then there is a pattern 
 
 
 DATA PROCESSING WITH SKLEARN
-Data standardization: data is said to be standard when it has a standard deviation of 1 and a mean of 0. the way to do this is to substract the overall mean from each element and then divide by the overall standard deviation.
+Data standardization: data is said to be standard when it has a standard deviation of 1 and a mean of 0. The way to do this is to subtract the overall mean from each element and then divide it by the overall standard deviation.
 z=(x−μ)/σ
 ​
 A. Range scaling
