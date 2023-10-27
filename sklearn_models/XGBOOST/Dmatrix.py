@@ -70,7 +70,7 @@ model.fit(data, labels)
 predictions = model.predict(new_data)
 print('Predictions:\n{}'.format(repr(predictions)))
 
-model = xgb.XGBClassifier(objective='multi:softmax', eval_metric='mlogloss', use_label_encoder=False)
+model = xgb.XGBClassifier(objective='multi:softmax', eval_metric='logloss', use_label_encoder=False)
 # predefined data and labels (multiclass dataset)
 model.fit(data, labels)
 
