@@ -36,7 +36,7 @@ links=[]
 
 
 for container in containers:
-    container.find_element(by="xpath", value='./a/h2').text
+    container.find_element(by="xpath", value='./a/h3').text
     container.find_element(by="xpath", value='./a/p').text
     link= container.find_element(by="xpath", value='./a).get_attribute("href")
     titles.append(title)
@@ -60,4 +60,4 @@ df_headlines.to_csv(final_path)
 driver.quit()
 
 
-
+//
