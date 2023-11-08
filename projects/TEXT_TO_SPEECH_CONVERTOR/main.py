@@ -1,8 +1,9 @@
-import pyttsx3
+from gtts import gTTS
+import IPython.display as ipd
 
-text_speech = pyttsx3.init()
-answer = input("Enter the text you want to convert: ")
+text = "Hello, this is a sample text to be converted to speech."
+tts = gTTS(text)
+tts.save("output.mp3")
 
-text_speech.say(answer)
-text_speech.runAndWait()
-
+# Play the generated audio
+ipd.Audio("output.mp3")
