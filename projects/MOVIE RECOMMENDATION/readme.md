@@ -24,8 +24,7 @@ pip install pandas pgmpy
 ## USAGE
 Import necessary libraries:
 
-python
-Copy code
+
 import pandas as pd
 from pgmpy.models import BayesianNetwork
 from pgmpy.estimators import ParameterEstimator
@@ -33,8 +32,6 @@ from pgmpy.inference import VariableElimination
 Load movie ratings data. Ensure you have a dataset with user ratings (e.g., 'movie_ratings.csv').
 
 Define the Bayesian Network structure:
-
-
 
 model = BayesianNetwork([('Genre', 'Rating'), ('Actor', 'Rating'), ('Director', 'Rating')])
 Estimate CPDs (Conditional Probability Distributions) from data:
