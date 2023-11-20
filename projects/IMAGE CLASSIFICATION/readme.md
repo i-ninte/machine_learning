@@ -1,4 +1,4 @@
-# Image Classifier Project README
+# Image Classifier Project 
 
 This project involves building an image classifier using the CIFAR-10 dataset. The code is organized into different sections to perform various tasks, from data loading and exploration to building and training both an Artificial Neural Network (ANN) and a Convolutional Neural Network (CNN) for image classification.
 
