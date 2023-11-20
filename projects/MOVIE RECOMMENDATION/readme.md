@@ -1,7 +1,7 @@
 (Link to Netflix Dashboard on Tableau)[https://public.tableau.com/app/profile/kwabena.obeng/viz/NextflixDashboard/Netflix]
 
 
-# Bayesian Network Movie Recommender README
+# Bayesian Network Movie Recommender 
 
 This project implements a Movie Recommender System using Bayesian Network modeling. The system recommends movies based on user preferences for genres, actors, and directors. The Bayesian Network is built using the pgmpy library, and inference is performed using Variable Elimination.
 
@@ -84,5 +84,5 @@ for movie in recommended_movies:
     
 ## Acknowledgments
 The project utilizes the pgmpy library for Bayesian Network modeling.
-The dataset used for movie ratings is not provided in this repository. Ensure you have your own dataset with user ratings.
+(link to dataset)[https://github.com/DataScienceRoadMapDSRM/Tableau-Dashboards-info/blob/main/netflix_titles.csv]
 Feel free to adapt and integrate this Movie Recommender System into your projects!
