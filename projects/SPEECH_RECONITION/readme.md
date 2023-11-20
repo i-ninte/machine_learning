@@ -1,5 +1,5 @@
 
-# Speech Recognition Project README
+# Speech Recognition Project 
 
 This project implements a basic speech recognition system using the `speech_recognition` library. The goal is to capture audio input, perform speech recognition, and transcribe the spoken words using Google's speech recognition service.
 
