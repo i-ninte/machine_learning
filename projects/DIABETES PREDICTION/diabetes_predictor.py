@@ -306,3 +306,13 @@ def predict_diabetes():
 
 result = predict_diabetes()
 print(result)
+
+
+#saving the model
+import joblib
+
+filename = 'diabetes_prediction_model.joblib'
+joblib.dump(classification_model, filename)
+
+print(f"Model saved as {filename}")
+
