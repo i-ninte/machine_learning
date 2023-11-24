@@ -8,3 +8,4 @@ clf = linear_model.LogisticRegression(max_iter=3000)
 cv_score = cross_val_score(clf, data, labels, cv=3)  # k = 3
 
 print('{}\n'.format(repr(cv_score)))
+
