@@ -16,10 +16,10 @@ Make sure you have Python installed in your environment. You can install the req
 
 ```bash
 pip install streamlit pandas scikit-learn joblib
-
+```
 # run the app
-streamlit run app.py
-
+```streamlit run app.py
+```
 # Usage
 Adjust the sliders to input weather conditions.
 Click the "Predict Weather" button to see the model's prediction.
