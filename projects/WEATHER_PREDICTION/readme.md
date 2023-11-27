@@ -20,3 +20,11 @@ pip install streamlit pandas scikit-learn joblib
 # run the app
 streamlit run app.py
 
+# Usage
+Adjust the sliders to input weather conditions.
+Click the "Predict Weather" button to see the model's prediction.
+
+# Model Information
+The app uses a Random Forest Classifier for predicting weather conditions. The model was trained using data with features such as temperature, humidity, wind speed, visibility, and atmospheric pressure.
+
+
