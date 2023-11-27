@@ -5,7 +5,7 @@ import joblib
 
 def load_model():
     # Load the pre-trained model
-    model = joblib.load('weather_model.joblib')
+    model = joblib.load('weather_model_pipeline.joblib')
     return model
 
 def predict_weather_conditions(model, input_data):
