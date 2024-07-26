@@ -11,7 +11,7 @@ The primary goal of this project is to develop a robust model that can accuratel
 
 - **Machine Learning Models**: We've built powerful machine learning models that use patient information such as glucose levels, BMI, and more to predict diabetes. These models have been fine-tuned and optimized for accuracy.
 
-- **Dashboard Creation**: We've created visually pleasing dashboards using Power BI to present the results in an intuitive and understandable manner. Stakeholders can use these dashboards for better decision-making.
+- **Dashboard Creation**: We've created visually pleasing dashboards using Power BI to present the results intuitively and understandably. Stakeholders can use these dashboards for better decision-making.
 
 - **Statistical Analysis**: Our project includes in-depth statistical analysis to identify correlations, trends, and risk factors related to diabetes.
 
